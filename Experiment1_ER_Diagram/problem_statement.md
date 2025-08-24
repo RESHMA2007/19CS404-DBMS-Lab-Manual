@@ -49,7 +49,7 @@ Design a database for patient management, appointments, medical records, and bil
 
 ## Scenario Chosen:
 University / Hospital (choose one)
-## SCNERIO CHOSEN : University
+## SCENARIO CHOSEN : University
 
 ## ER Diagram:
 ![ER Diagram](er_diagram.png)
@@ -99,3 +99,4 @@ fully functional university management system.
 Brief explanation of why you chose certain entities, relationships, and assumptions.
 
 ## RESULT
+Thus, The ER Diagram was designed Sucessfully.
