@@ -45,28 +45,57 @@ Design a database for patient management, appointments, medical records, and bil
    - Why you chose the entities and relationships.
    - How you modeled prerequisites or billing.
 
-# ER Diagram Submission - Student Name
+# ER Diagram Submission - Student Name:RESHMA R    212224040274
 
 ## Scenario Chosen:
 University / Hospital (choose one)
+## SCNERIO CHOSEN : University
 
 ## ER Diagram:
 ![ER Diagram](er_diagram.png)
+<img width="1367" height="557" alt="Screenshot 2025-08-24 095454" src="https://github.com/user-attachments/assets/2d5d5c7f-17e9-4aae-bc9a-6de3ff6290e0" />
+
 
 ## Entities and Attributes:
-- Entity1: Attributes
-- Entity2: Attributes
-...
+Student: Name, DOB, Register Number, Phone Number, Email ID, Subjects Enrolled
+University:University Name, University ID, Students and Faculties
+
+Department:Department Name, Department ID
+
+Program:Program Name, Program Code, Subjects
+
+Faculties:Name, Subject, Faculty ID
+
+Course:Course Name, Course Code, Credits
+
 
 ## Relationships and Constraints:
-- Relationship1 (Cardinality, Participation)
-- Relationship2 (Cardinality, Participation)
-...
+Relationship1 – Relationship (Many-to-Many, Student–University)
+
+Relationship2 – Is in a (Many-to-Many, Student–Department)
+
+Relationship3 – Provides (Many-to-Many, Department–Program)
+
+Relationship4 – Contains (Many-to-Many, Program–Course)
+
+Relationship5 – Handles (Many-to-Many, Faculties–Course)
+
+Relationship6 – Has (Many-to-Many, University–Faculties)
+
 
 ## Extension (Prerequisite / Billing):
-- Explain how you modeled prerequisites or billing.
-
+Explain how you modeled prerequisites or billing.
+First, a self-referencing M:N
+relationship called "Prerequisite" would be added within the Course entity, allowing
+the system to model the dependency between different courses. This ensures that
+course enrollment rules based on previous completions can be enforced properly.
+Second, a new entity called "Payment" would be introduced and linked to the
+Student entity through a One-to-Many relationship. This addition would help track
+all financial transactions, manage tuition fees, and support billing operations,
+providing a complete view of the financial obligations of each student. These
+enhancements would make the model more realistic and capable of supporting a
+fully functional university management system.
 ## Design Choices:
-Brief explanation of why you chose certain entities, relationships, and assumptions
+Brief explanation of why you chose certain entities, relationships, and assumptions.
 
 ## RESULT
